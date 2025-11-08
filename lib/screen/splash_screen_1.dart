@@ -24,7 +24,17 @@ class Screen1 extends StatelessWidget {
               )
             ),
           ),
-          
+          SizedBox(height: 20),
+          Text("Welcome",style: TextStyle(
+            fontSize: 30,
+            color: Colors.black
+          )),
+          Text("Forgot to bring your wallet \n when you are shopping?",
+          textAlign: TextAlign.center,
+          style: TextStyle(  
+            fontSize: 12,
+            color: Colors.black
+          )),
 
 
 
