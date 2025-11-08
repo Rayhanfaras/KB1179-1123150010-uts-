@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:kb1179_1123150010_uts/screen/splash_screen2.dart';
+import 'package:kb1179_1123150010_uts/screen/splash_screen_3.dart';
 
 class Screen2 extends StatelessWidget {
   const Screen2({super.key});
@@ -76,11 +76,11 @@ class Screen2 extends StatelessWidget {
                               width: double.infinity,
                             child: ElevatedButton(
                             onPressed: () {
-                            //  Navigator.pushAndRemoveUntil(
-                            //     context,
-                            //   MaterialPageRoute(builder: (context) => Screen3()),
-                            //   (Route<dynamic> route) => false,
-                            //   );
+                             Navigator.pushAndRemoveUntil(
+                                context,
+                              MaterialPageRoute(builder: (context) => Screen3()),
+                              (Route<dynamic> route) => false,
+                              );
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.green,
