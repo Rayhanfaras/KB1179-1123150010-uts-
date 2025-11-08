@@ -20,7 +20,7 @@ class Screen1 extends StatelessWidget {
                 shape: BoxShape.circle,
                 color: const Color.fromARGB(255, 104, 116, 104),
                 image: DecorationImage(
-                  image: AssetImage("assets/images/image.png"),
+                  image: AssetImage("assets/images/image1.png"),
                   fit: BoxFit.cover,
                 ),
               ),
