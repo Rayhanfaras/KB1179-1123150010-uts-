@@ -28,7 +28,43 @@ class Login extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 12, color: Colors.green),
                 ),
-               
+               const SizedBox(height: 20),
+                TextField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.email_outlined),
+                    labelText: 'Email',
+                    hintText: 'Masukan email anda',
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(25)),
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(25)),
+                      borderSide: BorderSide(color: Colors.green, width: 2),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                TextField(
+                  obscureText: true,
+                  keyboardType: TextInputType.visiblePassword,
+                  decoration: const InputDecoration(
+                    prefixIcon: Icon(Icons.lock_outlined),
+                    suffixIcon: Icon(Icons.visibility_off_outlined),
+                    labelText: 'Password',
+                    hintText: 'Masukan password anda',
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(25)),
+                      borderSide: BorderSide(color: Colors.grey),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(25)),
+                      borderSide: BorderSide(color: Colors.green, width: 2),
+                    ),
+                  ),
+                ),
+
               ],
             ),
           ),
