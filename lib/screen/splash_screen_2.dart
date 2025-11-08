@@ -68,7 +68,30 @@ class Screen2 extends StatelessWidget {
                           ),
                         ],
                       ),
-
+ SizedBox(height: 40),
+                           Container(
+                            margin: EdgeInsets.all(40),
+                            child: SizedBox(
+                              height: 40,
+                              width: double.infinity,
+                            child: ElevatedButton(
+                            onPressed: () {
+                            //  Navigator.pushAndRemoveUntil(
+                            //     context,
+                            //   MaterialPageRoute(builder: (context) => Screen3()),
+                            //   (Route<dynamic> route) => false,
+                            //   );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.green,
+                            ),
+                             child: Text("Continue",style: TextStyle(
+                              color: Colors.white,
+                             )
+                             )
+                          ),
+                          )
+                          )
 
 
 
