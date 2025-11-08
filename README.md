@@ -1,16 +1,38 @@
-# kb1179_1234556_uts
+# 📱 Splash Screen Flutter
 
-A new Flutter project.
+* **Nama:** Rayhan Faras Ramadhani
+* **NIM:** 1123150010
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🖼️ Hasil Screenshot
 
-A few resources to get you started if this is your first Flutter project:
+Tampilan halaman splash screen aplikasi:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Splash Screen](assets/images/Screenshot1.png)
+![Splash Screen](assets/images/Screenshot2.png)
+![Splash Screen](assets/images/Screenshot3.png)
+![Splash Screen](assets/images/Screenshot4.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+---
+
+## ⚙️ Cara Menjalankan Project
+
+1. Buka project di **Android Studio** atau **VS Code**.
+2. Pastikan perangkat (emulator atau HP) sudah terhubung.
+3. Jalankan perintah berikut di terminal:
+
+   ```bash
+   flutter run
+   ```
+4. Aplikasi akan berjalan langsung di perangkat.
+
+---
+
+
+
+---
+
+✨ Matur Suwun ✨
