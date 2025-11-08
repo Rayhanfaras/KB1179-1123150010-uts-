@@ -102,6 +102,81 @@ class Login extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(height: 10),
+
+                // Garis dengan tulisan "atau"
+                Row(
+                  children: const [
+                    Expanded(
+                      child: Divider(
+                        color: Colors.grey,
+                        thickness: 1,
+                        endIndent: 10,
+                      ),
+                    ),
+                    Text("atau", style: TextStyle(color: Colors.grey)),
+                    Expanded(
+                      child: Divider(
+                        color: Colors.grey,
+                        thickness: 1,
+                        indent: 10,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+
+                // Google Login Button
+                SizedBox(
+                  width: double.infinity,
+                  height: 40,
+                  child: OutlinedButton.icon(
+                    onPressed: () {
+                      // Aksi login google
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Text('Melakukan login dengan Google...'),
+                          backgroundColor: Colors.blue,
+                        ),
+                      );
+                    },
+                    // Menggunakan Icon.public sebagai placeholder yang lebih umum
+                    icon: const Icon(Icons.public, color: Colors.black),
+                    label: const Text(
+                      "Login dengan Google",
+                      style: TextStyle(color: Colors.black, fontSize: 16),
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(color: Colors.grey),
+                      shape: RoundedRectangleBorder(
+                        // Menyamakan radius dengan tombol utama
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                    ),
+                  ),
+                ),
+
+                const SizedBox(height: 20),
+
+                // Link ke Halaman Register
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text("Belum punya akun?"),
+                    TextButton(
+                      onPressed: () {
+                        // Aksi navigasi ke halaman register
+                      },
+                      child: const Text(
+                        "Daftar di sini",
+                        style: TextStyle(
+                          color: Colors.green,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
 
               ],
             ),
