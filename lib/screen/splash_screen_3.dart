@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:kb1179_1123150010_uts/screen/splash_screen2.dart';
+import 'package:kb1179_1123150010_uts/screen/login.dart';
 
 class Screen3 extends StatelessWidget {
   const Screen3({super.key});
@@ -80,7 +80,7 @@ class Screen3 extends StatelessWidget {
                             onPressed: () {
                              Navigator.pushAndRemoveUntil(
                                 context,
-                              MaterialPageRoute(builder: (context) => Screen3()),
+                              MaterialPageRoute(builder: (context) => Login()),
                               (Route<dynamic> route) => false,
                               );
                             },
