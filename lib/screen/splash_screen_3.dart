@@ -24,6 +24,76 @@ class Screen3 extends StatelessWidget {
               )
             ),
           ),
+          SizedBox(height: 20),
+          Text("Welcome",style: TextStyle(
+            fontSize: 30,
+            color: Colors.black
+          )),
+          Text("Let's try wallie now \n And get the best solution",
+          textAlign: TextAlign.center,
+          style: TextStyle(  
+            fontSize: 12,
+            color: Colors.black
+          )),
+
+          SizedBox(height: 5),
+
+          Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            height: 10,
+                            width: 10,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xFFC8E6C9),
+                            ),
+                          ),
+                          SizedBox(width: 5),
+                          Container(
+                            height: 10,
+                            width: 10,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xFFC8E6C9),
+                            ),
+                          ),
+                          SizedBox(width: 5),
+                          Container(
+                            height: 10,
+                            width: 10,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                               color: Colors.green,
+                            ),
+                          ),
+                        ],
+                      ),
+
+                      SizedBox(height: 40),
+                           Container(
+                            margin: EdgeInsets.all(40),
+                            child: SizedBox(
+                              height: 40,
+                              width: double.infinity,
+                            child: ElevatedButton(
+                            onPressed: () {
+                             Navigator.pushAndRemoveUntil(
+                                context,
+                              MaterialPageRoute(builder: (context) => Screen3()),
+                              (Route<dynamic> route) => false,
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.green,
+                            ),
+                             child: Text("Continue",style: TextStyle(
+                              color: Colors.white,
+                             )
+                             )
+                          ),
+                          )
+                          )
 
           
 
